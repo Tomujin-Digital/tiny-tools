@@ -1,13 +1,18 @@
 {
   "name": "tt-tools",
   "version": "0.1.1",
-  "description": "",
-  "author": "",
-  "private": true,
-  "license": "UNLICENSED",
+  "description": "Томүжин Технологи ХХК нээлттэй хэрэглэх функцууд",
+  "author": "cybinon",
+  "private": false,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
+    "prepublish": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
