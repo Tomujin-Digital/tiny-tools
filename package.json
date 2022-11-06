@@ -1,14 +1,18 @@
 {
-  "name": "tt-tools",
+  "name": "@tomujintech/tiny-tools",
   "version": "0.1.1",
   "description": "Томүжин Технологи ХХК нээлттэй хэрэглэх функцууд",
-  "author": "cybinon",
+  "author": "tomujintech",
   "private": false,
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tomujin-Digital/tiny-tools.git"
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
