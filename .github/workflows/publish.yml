@@ -14,13 +14,13 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm run build
-      - run: npm publish --access public
+      - run: yarn
+      - run: yarn build
+      - run: yarn publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       # Register the package in the GitHub Package Registry and package owner name is Tomujin-Digital
-      - run: npm publish --access public --registry https://npm.pkg.github.com
+      - run: yarn publish --access public --registry https://npm.pkg.github.com
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GIT_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
