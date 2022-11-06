@@ -19,8 +19,8 @@ jobs:
       - run: yarn publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      # Register the package in the GitHub Package Registry 
-      - run: yarn publish --access public --registry https://npm.pkg.github.com
+      # Register the package in the GitHub Package Registry and package owner name is Tomujin-Digital
+      - run: yarn publish --access public --registry https://npm.pkg.github.com/@Tomujin-Digital/tiny-tools
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
 
