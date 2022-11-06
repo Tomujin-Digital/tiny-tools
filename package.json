@@ -1,8 +1,8 @@
 {
-  "name": "@tomujin-digital/tiny-tools",
+  "name": "@tomujintech/tiny-tools",
   "version": "0.1.12",
   "description": "Томүжин Технологи ХХК нээлттэй хэрэглэх функцууд",
-  "author": "tomujin-digital",
+  "author": "tomujintech",
   "private": false,
   "license": "MIT",
   "main": "dist/index.js",

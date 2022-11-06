@@ -19,8 +19,3 @@ jobs:
       - run: yarn publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: GITHUB_TOKEN=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 NPM_TOKEN=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 yarn semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
