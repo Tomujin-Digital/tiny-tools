@@ -1,6 +1,6 @@
 {
   "name": "@tomujintech/tiny-tools",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Томүжин Технологи ХХК нээлттэй хэрэглэх функцууд",
   "author": "tomujintech",
   "private": false,
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
+    "@nestjs/swagger": "^6.1.3",
     "axios": "^0.21.4",
     "bcrypt": "^5.0.1",
     "cheerio": "^1.0.0-rc.10",
@@ -106,6 +107,6 @@
       "@semantic-release/release-notes-generator",
       "@semantic-release/npm",
       "@semantic-release/git"
-    ]  
+    ]
   }
 }
