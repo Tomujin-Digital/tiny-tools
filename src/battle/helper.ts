@@ -60,13 +60,14 @@ export const calculateTBP = ({ time, questionTime, isCorrect }) => {
 
 /**
  *
- * @param time  answered time in seconds
- * @param questionTime total time in seconds
- * @param isCorrect boolean value
+ * @param winrate  number of win / number of battles
+ * @param totalBattles number of battles
+
  */
 
 export const calculateBattleXP = ({ winrate, totalBattles }) => {
   let battleXP = (totalBattles * winrate) / 100;
+  return battleXP;
 };
 
 /**
