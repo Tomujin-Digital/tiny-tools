@@ -113,14 +113,14 @@ export const scoreToTBR = (score: number) => {
 
 /**
  * Return name of the league
- * @param battlexp
+ * @param winpoint
  */
-export const getLeague = (battlexp: number) => {
-  if (battlexp < 35) return "League 2";
-  if (battlexp >= 35 && battlexp < 70) return "League 2";
-  if (battlexp >= 70 && battlexp < 105) return "League 1";
-  if (battlexp >= 105 && battlexp < 140) return "National League";
-  if (battlexp >= 140) return "International League";
+export const getLeague = (winpoint: number) => {
+  if (winpoint < 70) return "League 2";
+  if (winpoint >= 70 && winpoint < 140) return "League 2";
+  if (winpoint >= 140 && winpoint < 210) return "League 1";
+  if (winpoint >= 210 && winpoint < 280) return "National League";
+  if (winpoint >= 280) return "International League";
 };
 
 export const getRankSymbol = (rank: number) => {
